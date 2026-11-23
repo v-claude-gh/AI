@@ -58,9 +58,9 @@ The choice is made on measurements, not on reviews.
 
 ### Phase 1: installation and benchmark
 
-- Ansible playbook: Vulkan driver, llama.cpp built at a pinned release, llama-swap, models, launcher. **(this PR)**
+- Ansible playbook: Vulkan driver, llama.cpp built at a pinned release, llama-swap, models, launcher. **Done.**
 - Measure each candidate on the real computer: generation and prompt speed (tokens/s), VRAM and RAM, the longest context that fits, and quality on a few questions in Italian and English and on extracting clauses from a sample contract.
-- Result: `docs/benchmark.md` and the choice of the main model.
+- Result: `docs/benchmark.md` and the choice of the main model. The benchmark is `scripts/bench.py`; its contract (`bench/contract-it.md`) and expected clauses also seed phase 3.
 
 ### Phase 2: the analysis tool
 

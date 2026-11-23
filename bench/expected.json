@@ -1,0 +1,31 @@
+{
+  "_comment": "Clauses unfavourable to the customer planted in contract-it.md. A clause counts as found when one of the model's verified quotes matches one of its patterns (case-insensitive regular expressions).",
+  "clauses": [
+    {"id": "tacit-renewal", "article": "3.2", "label": "Rinnovo tacito di 12 mesi",
+     "patterns": ["rinnova tacitamente"]},
+    {"id": "cancellation-notice", "article": "3.2", "label": "Disdetta solo per raccomandata, 60 giorni prima",
+     "patterns": ["raccomandata", "sessanta giorni"]},
+    {"id": "price-increase", "article": "4.2", "label": "Aumento annuale ISTAT + 5 punti",
+     "patterns": ["ISTAT", "cinque punti"]},
+    {"id": "suspension", "article": "4.3", "label": "Sospensione senza preavviso per una rata non pagata",
+     "patterns": ["senza preavviso"]},
+    {"id": "early-exit-penalty", "article": "5.2", "label": "Penale del 50% dei canoni residui",
+     "patterns": ["penale", "cinquanta per cento"]},
+    {"id": "unilateral-changes", "article": "6.1-6.2", "label": "Modifiche unilaterali, accettate con l'uso",
+     "patterns": ["modificare in qualsiasi momento", "costituisce accettazione"]},
+    {"id": "content-licence", "article": "7.2", "label": "Licenza perpetua e irrevocabile sui contenuti",
+     "patterns": ["perpetua", "irrevocabile"]},
+    {"id": "data-to-partners", "article": "8.2", "label": "Dati ai partner per marketing (opt-out)",
+     "patterns": ["partner", "marketing"]},
+    {"id": "data-retention", "article": "8.3", "label": "Conservazione dei dati per 10 anni",
+     "patterns": ["dieci anni"]},
+    {"id": "no-liability-data-loss", "article": "10.1", "label": "Nessuna responsabilità per la perdita dei file",
+     "patterns": ["non è responsabile"]},
+    {"id": "liability-cap", "article": "10.2", "label": "Responsabilità limitata a 3 mesi di canoni",
+     "patterns": ["tre mesi"]},
+    {"id": "arbitration", "article": "11.2", "label": "Arbitrato esclusivo a Lugano",
+     "patterns": ["arbitrale", "Lugano"]},
+    {"id": "class-action-waiver", "article": "11.3", "label": "Rinuncia alle azioni collettive",
+     "patterns": ["azioni collettive"]}
+  ]
+}

@@ -1,0 +1,5 @@
+# Benchmark reports (scripts/bench.py): local output, summarised in docs/benchmark.md
+bench/results/
+
+# Python
+__pycache__/

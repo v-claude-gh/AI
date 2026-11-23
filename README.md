@@ -40,8 +40,11 @@ Everything is installed in the home directory by an Ansible playbook; root is us
 │   └── launcher/                     # the "ai" command and the menu entries (tag: launcher)
 ├── docs/
 │   ├── plan.md                       # goals, choices, phases
+│   ├── benchmark.md                  # how the models are measured, results
 │   ├── walkthrough.md                # every role, task by task
 │   └── maintenance.md                # updates, models, troubleshooting, removal
+├── bench/                            # benchmark inputs: sample contract, expected clauses
+├── scripts/bench.py                  # phase 1 benchmark (speed, memory, clause extraction)
 ├── verify.md                         # commands to check each part
 └── CLAUDE.md                         # how Claude contributes to this repository
 ```
@@ -83,6 +86,7 @@ Other programs can use the OpenAI-compatible API at `http://127.0.0.1:8080/v1`, 
 - [docs/walkthrough.md](docs/walkthrough.md): every role task by task, what it does and why.
 - [docs/maintenance.md](docs/maintenance.md): updating llama.cpp and llama-swap, adding or removing models, troubleshooting, removal.
 - [verify.md](verify.md): commands to check each part.
+- [docs/benchmark.md](docs/benchmark.md): how the models are measured and compared, and the results.
 
 ## License
 
